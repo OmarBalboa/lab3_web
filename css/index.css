@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  /*background-color: hotpink;*/
+}
+
+.logo > img {
+  width: 50px;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: -20px;
+}
+
+.hamburger{
+  display: flex;
+  justify-content: flex-end;
+  color:white;
+}
+
+.menu{
+  display: none;
+
+}
+
+.navbar{
+  background-color: grey;
+  margin-left: 10px;
+}
+
+main{
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product{
+  border: solid;
+  border-width: 1px;
+  border-color: gray;
+  text-align: center;
+}
+
+.social{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+/* Tablets, ipads or portraits 768-1024 */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  body{
+    /*background-color: khaki;*/
+  }
+
+  header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .product{
+    border-radius: 5px;
+    margin: 1px;
+    border-color: rgb(199, 199, 199);
+  }
+
+  nav{
+    margin-top: 4px;
+  }
+}
+
+@media (min-width: 1025px){
+  body{
+    /*background-color: tomato;*/
+  }
+
+  header{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    margin-right: 25%;
+  }
+
+  .menu{
+    display: contents;
+    display: flex;
+    color: white;
+    flex-direction: row; 
+    justify-content: flex-end;
+    list-style: none;
+  }
+
+  .hamburger{
+    display: none;
+  }
+
+  main{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .product{
+    margin-left: 5px;
+    margin-right: 5px;
+    flex-basis: 100%;
+    border-radius: 5px;
+    border-color: rgb(199, 199, 199);
+  }
+
+  .logo{
+    margin-right: 5%;
+  }
+
+  li{
+    margin-right: 25px;
+    margin-left:  45px;
+    margin-top: 10px;
+  }
+
+  nav{
+    margin-right: 10px;
+    height: 40px;
+  }
+
+  .social{
+    display: flex;
+    justify-content: space-around;
+  }
+}
